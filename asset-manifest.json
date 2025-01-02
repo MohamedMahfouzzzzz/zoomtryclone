@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mohamedmahfouzzzzz.github.io/zoomtryclone/static/css/main.cbf16ab2.css",
+    "main.js": "/mohamedmahfouzzzzz.github.io/zoomtryclone/static/js/main.6b66dd14.js",
+    "static/media/conf.jpg": "/mohamedmahfouzzzzz.github.io/zoomtryclone/static/media/conf.95fa64ed2a09672abd07.jpg",
+    "static/media/logo.png": "/mohamedmahfouzzzzz.github.io/zoomtryclone/static/media/logo.d90c82b0f2eab5b89563.png",
+    "index.html": "/mohamedmahfouzzzzz.github.io/zoomtryclone/index.html",
+    "main.cbf16ab2.css.map": "/mohamedmahfouzzzzz.github.io/zoomtryclone/static/css/main.cbf16ab2.css.map",
+    "main.6b66dd14.js.map": "/mohamedmahfouzzzzz.github.io/zoomtryclone/static/js/main.6b66dd14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbf16ab2.css",
+    "static/js/main.6b66dd14.js"
+  ]
+}
