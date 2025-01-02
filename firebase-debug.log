@@ -1,0 +1,518 @@
+[debug] [2025-01-02T14:21:31.163Z] ----------------------------------------------------------------------
+[debug] [2025-01-02T14:21:31.166Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ma466\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-02T14:21:31.167Z] CLI Version:   13.29.1
+[debug] [2025-01-02T14:21:31.167Z] Platform:      win32
+[debug] [2025-01-02T14:21:31.167Z] Node Version:  v23.5.0
+[debug] [2025-01-02T14:21:31.167Z] Time:          Thu Jan 02 2025 16:21:31 GMT+0200 (Eastern European Standard Time)
+[debug] [2025-01-02T14:21:31.168Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-02T14:21:31.257Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-02T14:21:31.257Z] > authorizing via signed-in user (wrutijytyrte@gmail.com)
+[debug] [2025-01-02T14:21:31.258Z] [iam] checking project zoomtryclone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-02T14:21:31.259Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:31.259Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:31.260Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions [none]
+[debug] [2025-01-02T14:21:31.261Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions x-goog-quota-user=projects/zoomtryclone
+[debug] [2025-01-02T14:21:31.261Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-02T14:21:32.338Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions 200
+[debug] [2025-01-02T14:21:32.339Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-02T14:21:32.340Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:32.340Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:32.341Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone [none]
+[debug] [2025-01-02T14:21:32.806Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone 200
+[debug] [2025-01-02T14:21:32.806Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone {"projectId":"zoomtryclone","projectNumber":"397767761872","displayName":"zoomtryclone","name":"projects/zoomtryclone","resources":{"hostingSite":"zoomtryclone"},"state":"ACTIVE","etag":"1_688f1d60-5811-402b-b6f6-128a98bb6f7b"}
+[info] 
+[info] === Deploying to 'zoomtryclone'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-02T14:21:32.829Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:32.830Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:32.830Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions [none]
+[debug] [2025-01-02T14:21:32.831Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-02T14:21:34.841Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions 200
+[debug] [2025-01-02T14:21:34.841Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions {"name":"projects/397767761872/sites/zoomtryclone/versions/91c0877d9a08f9fb","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[zoomtryclone]: beginning deploy... 
+[info] i  hosting[zoomtryclone]: found 15 files in build 
+[debug] [2025-01-02T14:21:34.908Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-02T14:21:34.923Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:34.923Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:34.924Z] [hosting] hash cache [YnVpbGQ] stored for 15 files
+[debug] [2025-01-02T14:21:34.924Z] [hosting][hash queue][FINAL] {"max":8,"min":0,"avg":0.5333333333333333,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":12}
+[debug] [2025-01-02T14:21:34.925Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/91c0877d9a08f9fb:populateFiles [none]
+[debug] [2025-01-02T14:21:34.925Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/91c0877d9a08f9fb:populateFiles {"files":{"/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/manifest.json":"ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c","/logo512.png":"212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d","/logo192.png":"79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0","/index.html":"0f7eef99574166c7368dd6cb4796ec7ebd6c6f7ffc2b67805cbac1f3ef3cf56c","/favicon.ico":"27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d","/asset-manifest.json":"82ff0faa59805e03942d7916173f79779d34d4049b2819c953ff1faa9efa748d","/static/media/logo.d90c82b0f2eab5b89563.png":"810bcf5ce741ac37786656780cc7094b0da693217291da063f27d37cd7fa1436","/static/media/conf.95fa64ed2a09672abd07.jpg":"f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5","/static/js/main.72d83248.js.map":"ae3f672b0627892cd8901a5b87077d30c3ff7795e9a64c51850557c6a5d18217","/static/js/main.72d83248.js.LICENSE.txt":"32421a034e05c3cf65421e507b187fc404a2ab977e2d56f7bc52f87b77d3b206","/static/js/main.72d83248.js":"2e89425c8b9ba6dd2116bba9f6020bedeb7629201f5eb51acb26bb766c23a219","/static/css/main.cbf16ab2.css.map":"08eccce6644f00da93f1ee1250d5302004dd584a9c04f2a07e9a0e76a59f8601","/static/css/main.cbf16ab2.css":"2e8f134acae122858afa1dfd53e5742381ebae1f24ca46bb3a2fff5632644f69","/404.html":"762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890"}}
+[debug] [2025-01-02T14:21:35.482Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/91c0877d9a08f9fb:populateFiles 200
+[debug] [2025-01-02T14:21:35.482Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/91c0877d9a08f9fb:populateFiles {"uploadRequiredHashes":["762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890","f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files"}
+[debug] [2025-01-02T14:21:35.484Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:35.484Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:35.485Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:35.485Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:21:35.485Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890 [none]
+[debug] [2025-01-02T14:21:35.486Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890 [stream]
+[debug] [2025-01-02T14:21:35.489Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:21:35.489Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[debug] [2025-01-02T14:21:35.492Z] [hosting][populate queue][FINAL] {"max":563,"min":563,"avg":563,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":570}
+[debug] [2025-01-02T14:21:35.493Z] [hosting] uploads queued: 2
+[debug] [2025-01-02T14:21:36.924Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890 200
+[debug] [2025-01-02T14:21:36.925Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890 [stream]
+[debug] [2025-01-02T14:22:18.610Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:22:18.612Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:22:18.612Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:22:18.612Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:22:18.612Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[debug] [2025-01-02T14:23:02.131Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:23:02.132Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:23:02.133Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:23:02.133Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:23:02.133Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/91c0877d9a08f9fb/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[debug] [2025-01-02T14:24:56.319Z] ----------------------------------------------------------------------
+[debug] [2025-01-02T14:24:56.323Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ma466\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2025-01-02T14:24:56.323Z] CLI Version:   13.29.1
+[debug] [2025-01-02T14:24:56.324Z] Platform:      win32
+[debug] [2025-01-02T14:24:56.324Z] Node Version:  v23.5.0
+[debug] [2025-01-02T14:24:56.324Z] Time:          Thu Jan 02 2025 16:24:56 GMT+0200 (Eastern European Standard Time)
+[debug] [2025-01-02T14:24:56.324Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-02T14:24:56.419Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-02T14:24:56.420Z] > authorizing via signed-in user (wrutijytyrte@gmail.com)
+[debug] [2025-01-02T14:24:56.420Z] [iam] checking project zoomtryclone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-02T14:24:56.422Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:24:56.422Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:24:56.423Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions [none]
+[debug] [2025-01-02T14:24:56.424Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions x-goog-quota-user=projects/zoomtryclone
+[debug] [2025-01-02T14:24:56.424Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-02T14:24:57.467Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions 200
+[debug] [2025-01-02T14:24:57.469Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-02T14:24:57.474Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:24:57.475Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:24:57.476Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone [none]
+[debug] [2025-01-02T14:24:57.980Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone 200
+[debug] [2025-01-02T14:24:57.981Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone {"projectId":"zoomtryclone","projectNumber":"397767761872","displayName":"zoomtryclone","name":"projects/zoomtryclone","resources":{"hostingSite":"zoomtryclone"},"state":"ACTIVE","etag":"1_688f1d60-5811-402b-b6f6-128a98bb6f7b"}
+[info] 
+[info] === Deploying to 'zoomtryclone'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-02T14:24:58.016Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:24:58.018Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:24:58.021Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions [none]
+[debug] [2025-01-02T14:24:58.023Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-02T14:24:59.653Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions 200
+[debug] [2025-01-02T14:24:59.654Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions {"name":"projects/397767761872/sites/zoomtryclone/versions/624be1d03a311307","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[zoomtryclone]: beginning deploy... 
+[info] i  hosting[zoomtryclone]: found 14 files in build 
+[debug] [2025-01-02T14:24:59.703Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-02T14:25:00.112Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:25:00.112Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:25:00.116Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2025-01-02T14:25:00.117Z] [hosting][hash queue][FINAL] {"max":400,"min":2,"avg":63.285714285714285,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":409}
+[debug] [2025-01-02T14:25:00.118Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/624be1d03a311307:populateFiles [none]
+[debug] [2025-01-02T14:25:00.118Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/624be1d03a311307:populateFiles {"files":{"/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/manifest.json":"ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c","/logo512.png":"212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d","/logo192.png":"79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0","/favicon.ico":"27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d","/index.html":"0f7eef99574166c7368dd6cb4796ec7ebd6c6f7ffc2b67805cbac1f3ef3cf56c","/asset-manifest.json":"82ff0faa59805e03942d7916173f79779d34d4049b2819c953ff1faa9efa748d","/static/css/main.cbf16ab2.css.map":"08eccce6644f00da93f1ee1250d5302004dd584a9c04f2a07e9a0e76a59f8601","/static/css/main.cbf16ab2.css":"2e8f134acae122858afa1dfd53e5742381ebae1f24ca46bb3a2fff5632644f69","/static/media/logo.d90c82b0f2eab5b89563.png":"810bcf5ce741ac37786656780cc7094b0da693217291da063f27d37cd7fa1436","/static/js/main.72d83248.js.LICENSE.txt":"32421a034e05c3cf65421e507b187fc404a2ab977e2d56f7bc52f87b77d3b206","/static/media/conf.95fa64ed2a09672abd07.jpg":"f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5","/static/js/main.72d83248.js":"2e89425c8b9ba6dd2116bba9f6020bedeb7629201f5eb51acb26bb766c23a219","/static/js/main.72d83248.js.map":"ae3f672b0627892cd8901a5b87077d30c3ff7795e9a64c51850557c6a5d18217"}}
+[debug] [2025-01-02T14:25:00.479Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/624be1d03a311307:populateFiles 200
+[debug] [2025-01-02T14:25:00.481Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/624be1d03a311307:populateFiles {"uploadRequiredHashes":["f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files"}
+[debug] [2025-01-02T14:25:00.489Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:25:00.490Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:25:00.493Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:25:00.494Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[debug] [2025-01-02T14:25:00.508Z] [hosting][populate queue][FINAL] {"max":380,"min":380,"avg":380,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":396}
+[debug] [2025-01-02T14:25:00.509Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:25:43.612Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:25:43.615Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:25:43.617Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:25:43.619Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:25:43.620Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:26:27.127Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:26:27.129Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:26:27.136Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:26:27.139Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:26:27.140Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:27:11.455Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:27:11.456Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:27:11.460Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:27:11.463Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:27:11.465Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:27:57.390Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:27:57.392Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:27:57.399Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:27:57.402Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:27:57.403Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:28:46.508Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:28:46.510Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:28:46.517Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:28:46.519Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:28:46.521Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/624be1d03a311307/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] Task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 failed: retries exhausted after 6 attempts, with error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+[debug] [2025-01-02T14:29:29.223Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":1,"success":0,"errored":1,"retried":5,"total":1,"elapsed":268736}
+[info] i  hosting: uploading new files [1/1] (100%) 
+[debug] [2025-01-02T14:29:33.239Z] FirebaseError: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at RetryOperation._fn (C:\Users\ma466\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:296:88)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 failed: retries exhausted after 6 attempts, with error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+[debug] [2025-01-02T14:31:11.375Z] ----------------------------------------------------------------------
+[debug] [2025-01-02T14:31:11.379Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ma466\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2025-01-02T14:31:11.379Z] CLI Version:   13.29.1
+[debug] [2025-01-02T14:31:11.379Z] Platform:      win32
+[debug] [2025-01-02T14:31:11.379Z] Node Version:  v23.5.0
+[debug] [2025-01-02T14:31:11.380Z] Time:          Thu Jan 02 2025 16:31:11 GMT+0200 (Eastern European Standard Time)
+[debug] [2025-01-02T14:31:11.380Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-02T14:31:11.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-02T14:31:11.477Z] > authorizing via signed-in user (wrutijytyrte@gmail.com)
+[debug] [2025-01-02T14:31:11.478Z] [iam] checking project zoomtryclone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-02T14:31:11.481Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:11.481Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:11.483Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions [none]
+[debug] [2025-01-02T14:31:11.484Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions x-goog-quota-user=projects/zoomtryclone
+[debug] [2025-01-02T14:31:11.485Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-02T14:31:12.714Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions 200
+[debug] [2025-01-02T14:31:12.714Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zoomtryclone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-02T14:31:12.718Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:12.720Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:12.722Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone [none]
+[debug] [2025-01-02T14:31:13.307Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone 200
+[debug] [2025-01-02T14:31:13.307Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/zoomtryclone {"projectId":"zoomtryclone","projectNumber":"397767761872","displayName":"zoomtryclone","name":"projects/zoomtryclone","resources":{"hostingSite":"zoomtryclone"},"state":"ACTIVE","etag":"1_688f1d60-5811-402b-b6f6-128a98bb6f7b"}
+[info] 
+[info] === Deploying to 'zoomtryclone'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-02T14:31:13.340Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:13.341Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:13.343Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions [none]
+[debug] [2025-01-02T14:31:13.344Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-02T14:31:15.335Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions 200
+[debug] [2025-01-02T14:31:15.335Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/zoomtryclone/versions {"name":"projects/397767761872/sites/zoomtryclone/versions/2adb6aa9dcd50d6f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[zoomtryclone]: beginning deploy... 
+[info] i  hosting[zoomtryclone]: found 14 files in build 
+[debug] [2025-01-02T14:31:15.370Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-02T14:31:15.378Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:15.378Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:15.381Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2025-01-02T14:31:15.385Z] [hosting][hash queue][FINAL] {"max":2,"min":1,"avg":1,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":11}
+[debug] [2025-01-02T14:31:15.386Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/2adb6aa9dcd50d6f:populateFiles [none]
+[debug] [2025-01-02T14:31:15.387Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/2adb6aa9dcd50d6f:populateFiles {"files":{"/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/manifest.json":"ee04fb47e525c67d8424ffe9b4d8a8a24e434504478afca4e0ca602146836d4c","/logo512.png":"212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d","/logo192.png":"79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0","/index.html":"0f7eef99574166c7368dd6cb4796ec7ebd6c6f7ffc2b67805cbac1f3ef3cf56c","/favicon.ico":"27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d","/asset-manifest.json":"82ff0faa59805e03942d7916173f79779d34d4049b2819c953ff1faa9efa748d","/static/media/logo.d90c82b0f2eab5b89563.png":"810bcf5ce741ac37786656780cc7094b0da693217291da063f27d37cd7fa1436","/static/media/conf.95fa64ed2a09672abd07.jpg":"f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5","/static/js/main.72d83248.js.map":"ae3f672b0627892cd8901a5b87077d30c3ff7795e9a64c51850557c6a5d18217","/static/js/main.72d83248.js.LICENSE.txt":"32421a034e05c3cf65421e507b187fc404a2ab977e2d56f7bc52f87b77d3b206","/static/js/main.72d83248.js":"2e89425c8b9ba6dd2116bba9f6020bedeb7629201f5eb51acb26bb766c23a219","/static/css/main.cbf16ab2.css.map":"08eccce6644f00da93f1ee1250d5302004dd584a9c04f2a07e9a0e76a59f8601","/static/css/main.cbf16ab2.css":"2e8f134acae122858afa1dfd53e5742381ebae1f24ca46bb3a2fff5632644f69"}}
+[debug] [2025-01-02T14:31:16.073Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/2adb6aa9dcd50d6f:populateFiles 200
+[debug] [2025-01-02T14:31:16.105Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/397767761872/sites/zoomtryclone/versions/2adb6aa9dcd50d6f:populateFiles {"uploadRequiredHashes":["f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files"}
+[debug] [2025-01-02T14:31:16.141Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:16.176Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:16.177Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:31:16.178Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[debug] [2025-01-02T14:31:16.182Z] [hosting][populate queue][FINAL] {"max":799,"min":799,"avg":799,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":804}
+[debug] [2025-01-02T14:31:16.183Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:31:59.265Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:31:59.267Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:59.271Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:31:59.275Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:31:59.276Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:32:42.777Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:32:42.777Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:32:42.780Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:32:42.785Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:32:42.786Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:33:27.098Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:33:27.100Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:33:27.153Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:33:27.188Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:33:27.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:34:13.019Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:34:13.021Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:34:13.027Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:34:13.031Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:34:13.033Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-01-02T14:35:02.136Z] [uploadQueue] Retrying task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5
+[debug] [2025-01-02T14:35:02.137Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:35:02.143Z] Checked if tokens are valid: true, expires at: 1735830499399
+[debug] [2025-01-02T14:35:02.147Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [none]
+[debug] [2025-01-02T14:35:02.149Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/zoomtryclone/versions/2adb6aa9dcd50d6f/files/f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 [stream]
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] Task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 failed: retries exhausted after 6 attempts, with error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+[debug] [2025-01-02T14:35:44.852Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":1,"success":0,"errored":1,"retried":5,"total":1,"elapsed":268712}
+[info] i  hosting: uploading new files [1/1] (100%) 
+[debug] [2025-01-02T14:35:45.228Z] FirebaseError: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at RetryOperation._fn (C:\Users\ma466\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:296:88)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Task f28cdc77748044d91795b8865be682ec7a536da9820893533e98861beb9b06b5 failed: retries exhausted after 6 attempts, with error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
